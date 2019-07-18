@@ -12,7 +12,7 @@ while Dir.pwd != "/" do
 end
 
 FileUtils.cd("/Users/#{user_name}/Desktop")
-bender_file = File.open("ruby_project_creator/bender.txt")
+bender_file = File.open("rpc/bender.txt")
 bender = bender_file.read
 bender_file.close
 puts bender
@@ -39,12 +39,3 @@ FileUtils.touch("Gemfile.lock")
 system 'bundle install'
 system 'atom .'
 system 'open -a Terminal "`pwd`"'
-
-
-if :on
-  /////
-end
-
-if :off
-
-end
