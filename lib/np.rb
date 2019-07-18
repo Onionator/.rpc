@@ -131,7 +131,7 @@ while true do
       break
     end
 
-
+puts bender_data
 
 
 
