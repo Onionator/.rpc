@@ -1,20 +1,21 @@
 #!/usr/bin/env ruby
 
+bender = File.open("bender.txt").read
+File.open("bender.txt").close
+puts bender
 
-
-system 'cd'
-p Dir.pwd
 
 while Dir.pwd != "/Users"
-  p Dir.pwd
   Dir.chdir ".."
-
 end
 
 user_name = ENV['USER']
 
 Dir.chdir "#{user_name}/desktop"
 
+puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+puts "Welcome! To the amazing Ruby Project Creator!"
+puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 
 while true do
