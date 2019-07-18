@@ -1,15 +1,22 @@
 #!/usr/bin/env ruby
+user_name = ENV['USER']
 
-bender = File.open("bender.txt").read
-File.open("bender.txt").close
-puts bender
 
 
 while Dir.pwd != "/Users"
   Dir.chdir ".."
 end
 
-user_name = ENV['USER']
+Dir.chdir "#{user_name}/desktop/ruby_project_creator"
+
+bender = File.open("bender.txt")
+bender_data = bender.read
+bender.close
+puts bender_data
+
+while Dir.pwd != "/Users"
+  Dir.chdir ".."
+end
 
 Dir.chdir "#{user_name}/desktop"
 
