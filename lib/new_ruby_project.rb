@@ -5,7 +5,7 @@ while Dir.pwd != "/" do
   FileUtils.cd("..")
 end
 FileUtils.cd("/Users/#{user_name}/Desktop")
-bender_file = File.open("rpc/bender.txt")
+bender_file = File.open(".rpc/bender.txt")
 bender = bender_file.read
 bender_file.close
 puts bender
