@@ -7,6 +7,8 @@ file_to_run = Dir.glob("lib/*.rb")
 file_to_run.each_with_index { |files, i|
   puts "#{i + 1}. #{files}"
 }
-number = gets.chomp
+number = Integer(gets.chomp) rescue false
 puts "~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~"
+if number
 system "ruby #{file_to_run[number.to_i - 1]}"
+end
