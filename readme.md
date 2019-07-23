@@ -21,7 +21,7 @@ version 1.2 recreates the file as a hidden file on your desktop to keep it out o
 >`alias new_ruby="ruby [YOUR DIRECTORY HOLDING RPC].rpc/lib/new_ruby_project.rb"`
 * if you are using windows you will need to change line 2 in rpc/lib/new_ruby_project.rb from `user_name = ENV['USER']` to `user_name = ENV['USERNAME']`
 * Edit .bash_profile in the home directory to run start script from terminal
-> `alias start="ruby ~/desktop/rpc/lib/ruby_file_run_shortcut.rb"`
+> `alias start="ruby ~/desktop/.rpc/lib/ruby_file_run_shortcut.rb"`
 * After modfiying your .bash_profile you will need to close your terminal and open a new one
 
 ## Using the Script
