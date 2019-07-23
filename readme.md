@@ -26,7 +26,7 @@ version 1.2 recreates the file as a hidden file on your desktop to keep it out o
 
 ## Using the Script
 
-Use your terminal command `new_project` to start the script. The prompt will ask for your project and file names. New project folder will be created on your desktop.
+Use your terminal command `new_ruby` to start the script. The prompt will ask for your project and file names. New project folder will be created on your desktop.
 
 if you want to run a ruby file with a long file name enter `start` while in the project's root directory. Then based on the file's position in the outputted list, enter a number to run the command `ruby [THE NAME OF YOUR FILE]`. for example `start` [ENTER] `1` [ENTER] would open the first file in your lib directory.
 
