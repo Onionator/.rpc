@@ -1,7 +1,7 @@
 # Ruby Project Creator
 
 
-#### By _**Samuel Cook **_
+#### By Samuel Cook
 
 ## Description
 
