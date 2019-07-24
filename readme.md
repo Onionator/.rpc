@@ -1,7 +1,7 @@
 # Ruby Project Creator
 
 
-#### By _**Hugh Donkin, Samuel Cook **_
+#### By _**Samuel Cook **_
 
 ## Description
 
