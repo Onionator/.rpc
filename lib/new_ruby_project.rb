@@ -17,7 +17,12 @@ if user_project_name.upcase != "Q" && user_project_name.upcase != "QUIT"
   FileUtils.cd("#{user_project_name}")
   FileUtils.mkdir("lib")
   FileUtils.mkdir("spec")
+  FileUtils.mkdir("views")
   FileUtils.touch("lib/#{user_project_name}.rb")
+  FileUtils.touch("spec/#{user_project_name}_spec.rb")
+  FileUtils.touch("spec/#{user_project_name}_integration_spec.rb")
+  FileUtils.touch("views/index.erb")
+  FileUtils.touch("app.rb")
   File.open("lib/#{user_project_name}.rb", "w") {
     |file| file.write(
       "require 'pry'")}
@@ -28,7 +33,7 @@ if user_project_name.upcase != "Q" && user_project_name.upcase != "QUIT"
       FileUtils.touch("Gemfile")
   File.open("Gemfile", "w") {
     |file| file.write(
-      "source \'https://rubygems.org\'\ngem('pry')\ngem('rspec')
+      "source \'https://rubygems.org\'\ngem('pry')\ngem('rspec')\ngem('sinatra')\ngem('sinatra-contrib')\ngem('capybara')
       ")}
   FileUtils.touch("Gemfile.lock")
   system 'atom .'

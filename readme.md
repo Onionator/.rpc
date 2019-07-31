@@ -23,6 +23,7 @@ version 1.2 recreates the file as a hidden file on your desktop to keep it out o
 * Edit .bash_profile in the home directory to run start script from terminal
 > `alias start="ruby ~/desktop/.rpc/lib/ruby_file_run_shortcut.rb"`
 * After modfiying your .bash_profile you will need to close your terminal and open a new one
+> `alias lazy="ruby ~/desktop/.rpc/lib/run_app.rb"`
 
 ## Using the Script
 
